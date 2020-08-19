@@ -23,7 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/show-inventory', 'InventoryController@showInventory');
 
-Route::post('/inventory-add', 'InventoryController@inventory_add')->name('');
+Route::post('/inventory-add', 'InventoryController@inventory_add');
 
 Route::get('inventory-add', 'InventoryController@create')->name('inventory_add.create');
 Route::post('inventory-add', 'InventoryController@store')->name('inventory_add.store');
